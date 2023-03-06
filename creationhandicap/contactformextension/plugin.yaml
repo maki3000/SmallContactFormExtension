@@ -1,0 +1,18 @@
+plugin:
+    name: 'creationhandicap.contactformextension::lang.plugin.name'
+    description: 'creationhandicap.contactformextension::lang.plugin.description'
+    author: 'création handicap'
+    icon: oc-icon-inbox
+    homepage: ''
+permissions:
+    contactFormExtension:
+        tab: 'Kontakt-Formular Erweiterung'
+        label: 'Kontakt-Formular Erweiterung'
+navigation:
+    main-menu-item:
+        label: 'Kontakt-Formular Erweiterung'
+        url: creationhandicap/contactformextension/contactformextensions
+        icon: icon-inbox
+        permissions:
+            - contactFormExtension
+        order: '650'

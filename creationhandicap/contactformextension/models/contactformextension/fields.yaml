@@ -1,0 +1,44 @@
+fields:
+    blacklisted:
+        commentAbove: Enter a list of comma separated IP addresses
+        label: Blacklisted
+        size: small
+        span: full
+        type: textarea
+    whitelisted:
+        commentAbove: 'Enter a list of comma separated IP addresses. Be aware that when you add an IP or a list of IPs here, only these IPs are allowd to use the contact form'
+        label: Whitelisted
+        size: small
+        span: full
+        type: textarea
+    api_link:
+        commentAbove: This extension is build for an IP geolocation like ip2location.io (please add with API-key and IP paramter. The check will add the IP after this URL.)
+        label: 'Api link'
+        span: left
+        type: text
+    api_link_params:
+        commentAbove: 'e.g. in IP geolocation service ip2location.io "&format=json" is needed, to define the return fomrat'
+        label: 'Api link params'
+        span: right
+        type: text
+    allowed_countries:
+        type: repeater
+        label: 'Allowed countries'
+        titleFrom: country
+        prompt: Add new country
+        form:
+            fields:
+                country:
+                    label: Country
+                    type: text
+    redirect_url:
+        commentAbove: "IP validation without redirect isn't imlpemented yet"
+        label: 'Redirect URL'
+        type: text
+        span: left
+    failed_message:
+        commentAbove: 'If provided, user sees this message as alert. Useful when doing a country check and still want to inform a user about the situation.'
+        label: 'Failed message'
+        type: text
+        span: right
+    

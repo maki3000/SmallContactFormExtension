@@ -1,0 +1,10 @@
+name: Contact form IP validation
+form: $/creationhandicap/contactformextension/models/contactformextension/fields.yaml
+modelClass: CreationHandicap\ContactFormExtension\Models\ContactFormExtension
+defaultRedirect: creationhandicap/contactformextension/contactformextensions
+create:
+    redirect: 'creationhandicap/contactformextension/contactformextensions/update/:id'
+    redirectClose: creationhandicap/contactformextension/contactformextensions
+update:
+    redirect: creationhandicap/contactformextension/contactformextensions
+    redirectClose: creationhandicap/contactformextension/contactformextensions
